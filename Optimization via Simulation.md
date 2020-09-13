@@ -1,4 +1,4 @@
-# Optimization via Simulation
+# Optimization via Simulation (OvS)
 >Hong, L. Jeff, and Barry L. Nelson. "A brief introduction to optimization via simulation." Proceedings of the 2009 Winter Simulation Conference (WSC). IEEE, 2009.
 ----
 ## Problem definition
@@ -143,9 +143,8 @@ $$N(\mathbf{x}) = { y : y \in Θ \ and \ || y – x || = 1 }$$
 $\mathbf{x}$ is a local optimal solution if
 $$g(x) ≤ g(y) \ for \ all \ y \in N(x), \ or \ N(x) = \Phi$$
 
-\begin{center}
-\includegraphics[width=1.0\linewidth]{\img\fig1.jpg}
-\end{center}
+
+![alt tag](img/fig1.jpg)
 
 
 ## Convergent Optimization via Most Promising Area Stochastic Search (Hong and Nelson 2006)
@@ -155,9 +154,7 @@ $$g(x) ≤ g(y) \ for \ all \ y \in N(x), \ or \ N(x) = \Phi$$
 3. 모든 샘플 솔루션을 조금 더 시뮬레이션
 4. 각 솔루션의 누적 표본 평균을 계산하고 누적 표본 평균이 가장 좋은 솔루션을 선택
 
-\begin{center}
-\includegraphics[width=1.0\linewidth]{\img\fig2.jpg}
-\end{center}
+![alt tag](img/fig2.jpg)
 
 
 ## Framework for LCRS Algorithms
@@ -178,4 +175,7 @@ COMPASS는 locally convergent random search
   - 솔루션의 로컬 이웃에있는 모든 솔루션을 방문하고 솔루션이 이웃보다 나은 것처럼 보일 때
   - Xu et al. (2010) 지역 최적 성 테스트를위한 선택 절차 설계
 - 알고리즘은 글로벌 최적 솔루션보다 훨씬 더 나쁜 로컬 최적 솔루션 만 찾을 수 있음
+
+## Industrial Strength COMPASS
+
 
